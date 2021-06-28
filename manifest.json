@@ -1,0 +1,48 @@
+{
+    "manifest_version": 2,
+    "name": "Lọc bảng tin Facebook",
+    "version": "0.0.1",
+    "description": "Ẩn các tin có tag \"Gợi ý\" và \"Được tài trợ\". Chỉ áp dụng cho cài đặt ngôn ngữ Facebook là Tiếng Việt",
+    "browser_action": {
+        "default_popup": "html/popup.html",
+        "default_icon": {
+            "19": "img/fresh19.png",
+            "38": "img/fresh38.png"
+        }
+    },
+    "author": "Đào Đình Đức CHL195-13006",
+    "icons": {
+        "16": "img/fresh16.png",
+        "19": "img/fresh19.png",
+        "32": "img/fresh32.png",
+        "38": "img/fresh38.png",
+        "48": "img/fresh48.png",
+        "64": "img/fresh64.png",
+        "128": "img/fresh128.png",
+        "256": "img/fresh256.png",
+        "512": "img/fresh512.png"
+    },
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [{
+        "matches": [
+            "*://www.facebook.com/*"
+        ],
+        "js": [
+            "js/content_script.js"
+        ],
+        "run_at": "document_end"
+    }],
+    "permissions": [
+        "*://www.facebook.com/*",
+        "storage",
+        "unlimitedStorage",
+        "background",
+        "activeTab",
+        "tabs"
+    ]
+}

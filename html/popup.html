@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/all.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap4-toggle.min.css">
+    <script src="../js/bootstrap4-toggle.min.js"></script>
+    <link rel="stylesheet" href="../css/popup.css">
+    <title></title>
+</head>
+
+<body>
+    <p style="font-size: 19px; margin-bottom: 5px; font-weight: bold; color: white;" class="d-flex justify-content-center"><i class="fad fa-leaf mt-1 mr-2" style="color: greenyellow;"></i>Lọc bảng tin Facebook</p>
+    <div style="border-radius: 5px; background-color: white; margin: 5px; padding: 5px; ">
+        <div class="row py-1">
+            <div class="col d-flex justify-content-center" title="Lần đầu cần F5 trang">
+                <input id="mode" type="checkbox" data-toggle="toggle" data-on="On" data-off="Off" data-onstyle="success" data-offstyle="danger">
+            </div>
+        </div>
+        <hr>
+        <div class="row py-1">
+            <div class="col ml-2">
+                <input id="op1" type="checkbox" data-toggle="toggle" data-size="xs" style="float: right;"> Ẩn tin có tag "Được tài trợ"
+            </div>
+        </div>
+        <div class="row py-1">
+            <div class="col ml-2">
+                <input id="op2" type="checkbox" data-toggle="toggle" data-size="xs"> Ẩn tin có tag "Gợi ý"
+            </div>
+        </div>
+        <hr>
+        <div class="row py-1">
+            <div class="col ml-2">
+                <input id="op3" type="checkbox" data-toggle="toggle" data-size="xs"> Ẩn theo từ khóa <span class="badge badge-info"></span>
+            </div>
+        </div>
+        <div id="op3-ui" class="mt-2">
+            <input id="textWord" type="text" style="width: 100%; border-radius: 5px;" placeholder="Nhập từ cần tìm / thêm" title="Enter để thêm từ">
+            <div class="body-box-word mt-2">
+                <table class="table table-sm table-striped table-bordered" style="word-wrap: break-word;">
+                    <tbody id="listW">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    </div>
+    <p style="font-size: 10px; margin-bottom: 5px; font-weight: bold; color: white;" class="d-flex justify-content-center">Copyright © 2021 - Đào Đình Đức CHL195-13006</p>
+
+    <script src="../js/popup.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+body {
+    width: 270px;
+    background-color: deepskyblue;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+/* width */
+
+ ::-webkit-scrollbar {
+    width: 8px;
+    height: 15px;
+    overflow: hidden;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(128, 128, 128);
+    border-radius: 20px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+    margin-left: 3px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(28, 145, 13);
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+th {
+    text-align: center;
+}
+
+.body-box-word {
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
+#listW {
+    width: 240px;
+    font-size: 13px;
+}
+
+input[type=text] {
+    border: 1px inset lightgray;
+}
+
+td>input[type=text] {
+    outline: none;
+}
+
+td>input[type=text]:focus {
+    border: 1px outset deepskyblue;
+    background-color: rgb(168, 227, 250);
+    color: black;
+    outline: none;
+}
+
+table {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.fa-save:hover,
+.fa-trash-alt:hover,
+.fa-pen:hover {
+    transform: scale(1.1);
+    color: green;
+}
+
+.fa-save:active,
+.fa-trash-alt:active,
+.fa-pen:active {
+    transform: scale(0.9);
+    color: green;
+}
+
+td>input[type=text] {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px thin;
+}
