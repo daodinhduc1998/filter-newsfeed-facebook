@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Lọc bảng tin Facebook",
     "version": "0.0.1",
-    "description": "Ẩn các tin có tag \"Gợi ý\" và \"Được tài trợ\". Chỉ áp dụng cho cài đặt ngôn ngữ Facebook là Tiếng Việt",
+    "description": "Ẩn các tin có tag \"Gợi ý\", \"Được tài trợ\" và các từ khóa không mong muốn khác. Chỉ áp dụng cho cài đặt ngôn ngữ Facebook là Tiếng Việt",
     "browser_action": {
         "default_popup": "html/popup.html",
         "default_icon": {
