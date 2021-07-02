@@ -24,9 +24,11 @@ function onLoad() {
     } else {
         $('#op3').bootstrapToggle('off', true);
         var data = JSON.parse(localStorage.getItem('word'));
-        if (data.length >= 0) {
+        if (data) {
             var total = data.length;
             document.querySelector('span.badge-info').textContent = total;
+        } else {
+            document.querySelector('span.badge-info').textContent = "0"
         }
         $('#op3-ui').attr("hidden", true);
     }

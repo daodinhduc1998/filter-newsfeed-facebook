@@ -55,7 +55,7 @@ function filterNewsfeed() {
                     var c = document.querySelectorAll('div');
                     c.forEach(element2 => {
                         if (element2.hasAttribute('data-pagelet')) {
-                            var d = element2.querySelectorAll('div,span,strong');
+                            var d = element2.querySelectorAll('div');
                             d.forEach(element3 => {
                                 if (word.length) {
                                     word.forEach(element => {
@@ -83,7 +83,7 @@ function removeAdsRight() {
         if (element.hasAttribute('data-pagelet')) {
             if (element.getAttribute('data-pagelet') == 'RightRail') {
                 var e = element.querySelector('div');
-                e.hidden = true;
+                e.querySelector('span').hidden = true;
             }
         }
     });
